@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Goople</title>
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" integrity="sha384-s8S09N9W7S7S6S..." crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="btn" type="button" id="bgToggle">Mode</button>
+
+    <main class="page">
+        <header class="brand" id="brandName" style="cursor:pointer">
+            <div class="logo"></div>
+            <span>Goople</span>
+        </header>
+
+        <section class="search-card">
+            <div class="search-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="#9ca3af" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="11" r="6" stroke="#9ca3af" stroke-width="2"/></svg>
+                <input id="query" type="search" placeholder="Search the web..." />
+                <button type="button" id="clearBtn" style="background:transparent;border:0;cursor:pointer;color:#9ca3af">✕</button>         
+            </div>
+            <div class="button-row">
+                <button class="btn" id="searchBtn">Search</button>
+                <button class="btn secondary" id="timeBtn">Display Time</button>
+                <button class="btn secondary" id="luckyBtn">I'm Feeling Lucky</button>
+            </div>
+        </section>
+
+        <div id="searchResults"></div>
+        <div id="time" title="Current Time"></div>
+
+        <footer class="footer">
+            Built with HTML, CSS & JS — Arda Alici
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
